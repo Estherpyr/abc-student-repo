@@ -1,46 +1,50 @@
-// let number = 150;
-// let radius = 2;
-// let max = 800;
-// createRandomNodes(100,2,800);
-let num = 30;
-let yPos = 0;
-let xPos = 0;
-createRandomImage(30, 0, 0);
+let xPos=10;
+let yPos=20;
+changeImagePos(10,20);
 
 let clicking = document.getElementById("reset");
 clicking.addEventListener("click",function(){
-  createRandomImage(num, xPos, yPos);
+  changeImagePos(xPos,yPos);
 });
 
-function createRandomImage(num, xPos, yPos){
-  var canvas = document.getElementById("myCanvas");
-  var context = canvas.getContext("2d");
-  context.clearRect(0,0,canvas.width,canvas.height);
 
-  var added = Math.floor(Math.random(num)*10);
-  num+=added;
+function changeImagePos(xPos,yPos){
+  let random_xPos1 = Math.floor(Math.random() * Math.floor(500));
+  let random_yPos1 = Math.floor(Math.random() * Math.floor(1000));;
 
-  for(var i= 0; i<= num; i++){
-    var image= new Image();
-    image.src='2.JPG';
-    image.style.width='30px'
-    image.style.height='30px';
-    let random_yPos = Math.floor(Math.random(yPos)*1000);
-    let random_xPos = Math.floor(Math.random(xPos)*1000);
-    context.drawImage(image,random_xPos,random_yPos);
+  document.getElementById("myPic1").style.left = random_xPos1+"px";
+  document.getElementById("myPic1").style.top = random_yPos1+"px";
 
-    document.body.appendChild(image);
-   }
-   // }
-  // let canvas= document.getElementById("myCanvas");
-  // let context = canvas.getContext("2d");
-  // context.clearRect(0,0, canvas.width,canvas.height);
-  // for (var i = 0; i <=number; i++) {
-  //       context.beginPath();
-  //       var rand_x = Math.random(i) * max;
-  //       var rand_y = Math.random(i) * max;
-  //       context.arc(rand_x, rand_y, radius, 0, 2*Math.PI);
-  //       context.fill();
-  //       context.closePath();
-  //     }
+  let random_xPos2 = Math.floor(Math.random() * Math.floor(600));
+  let random_yPos2 = Math.floor(Math.random() * Math.floor(1300));;
+
+  document.getElementById("myPic2").style.left = random_xPos2+"px";
+  document.getElementById("myPic2").style.top = random_yPos2+"px";
+
+  let random_xPos3 = Math.floor(Math.random() * Math.floor(300));
+  let random_yPos3 = Math.floor(Math.random() * Math.floor(600));;
+
+  document.getElementById("myPic3").style.left = random_xPos3+"px";
+  document.getElementById("myPic3").style.top = random_yPos3+"px";
+
+  let random_xPos4 = Math.floor(Math.random() * Math.floor(900));
+  let random_yPos4 = Math.floor(Math.random() * Math.floor(600));;
+
+  document.getElementById("myPic4").style.left = random_xPos4+"px";
+  document.getElementById("myPic4").style.top = random_yPos4+"px";
+
+  let random_xPos5 = Math.floor(Math.random() * Math.floor(400));
+  let random_yPos5 = Math.floor(Math.random() * Math.floor(700));;
+
+  document.getElementById("myPic5").style.left = random_xPos5+"px";
+  document.getElementById("myPic5").style.top = random_yPos5+"px";
+
+  let random_xPos6 = Math.floor(Math.random() * Math.floor(800));
+  let random_yPos6 = Math.floor(Math.random() * Math.floor(1000));;
+
+  document.getElementById("myPic6").style.left = random_xPos6+"px";
+  document.getElementById("myPic6").style.top = random_yPos6+"px";
+
+
+
 }
