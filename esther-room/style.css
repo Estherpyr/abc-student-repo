@@ -1,0 +1,29 @@
+#top{
+  position:relative;
+  left:550px;
+  top:50px;
+  color:#95baf5;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 50px;
+}
+
+
+.small-projects a{
+  font-size: 30px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  color:#8fa0ba;
+  position: relative;
+  top:100px;
+  left:34px;
+  padding: 30px 200px;
+}
+
+.big-projects a{
+  font-size: 35px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  color:#8fa0ba;
+  position:relative;
+  top:50px;
+  left:100px;
+  padding:60px 50px;
+}
