@@ -27,3 +27,37 @@
   left:100px;
   padding:60px 50px;
 }
+
+img{
+  align-items: baseline;
+  width:30px;
+  height: 30px;
+}
+
+#sun{
+  position: absolute;
+  top:80px;
+  left:80px;
+  width:200px;
+  height:200px;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+}
+
+
+#music{
+  position:absolute;
+  top:30px;
+  left:300px;
+
+
+}
