@@ -45,6 +45,21 @@ function changeImagePos(xPos,yPos){
   document.getElementById("myPic6").style.left = random_xPos6+"px";
   document.getElementById("myPic6").style.top = random_yPos6+"px";
 
+  let random_xPos7 = Math.floor(Math.random() * Math.floor(800));
+  let random_yPos7 = Math.floor(Math.random() * Math.floor(1000));;
+
+  document.getElementById("myPic7").style.left = random_xPos7+"px";
+  document.getElementById("myPic7").style.top = random_yPos7+"px";
+
+  let random_xPos8 = Math.floor(Math.random() * Math.floor(800));
+  let random_yPos8 = Math.floor(Math.random() * Math.floor(1000));;
+
+  document.getElementById("myPic8").style.left = random_xPos8+"px";
+  document.getElementById("myPic8").style.top = random_yPos8+"px";
+
+
+
+
 
 
 }
