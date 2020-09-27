@@ -5,8 +5,13 @@ changeImagePos(10,20);
 let clicking = document.getElementById("reset");
 clicking.addEventListener("click",function(){
   changeImagePos(xPos,yPos);
+  play();
 });
 
+function play(){
+  var audio = document.getElementById("audio");
+  audio.play();
+}
 
 function changeImagePos(xPos,yPos){
   let random_xPos1 = Math.floor(Math.random() * Math.floor(500));

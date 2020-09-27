@@ -10,6 +10,11 @@ button{
   cursor:pointer;
 }
 
+body{
+  background-image: url("timg-5.jpeg");
+
+}
+
 img{
   position:absolute;
 }
