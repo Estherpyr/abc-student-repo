@@ -60,8 +60,4 @@ function changeImagePos(xPos,yPos){
 
 
 
-
-
-
-
 }
