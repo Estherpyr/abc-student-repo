@@ -1,0 +1,14 @@
+#box{
+  width:100px;
+  height:100px;
+  background-color: yellow;
+  margin:20px;
+
+  transition: transform 2s;
+  cursor:pointer;
+
+}
+
+#button{
+  transition: transform 2s;
+}
