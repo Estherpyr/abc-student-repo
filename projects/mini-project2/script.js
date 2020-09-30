@@ -5,21 +5,18 @@ let centerX = screen.width/2;
 let centerY = screen.height/2;
 let radius = 200;
 
-let numSquares = 12;
+let sw = screen.width;
+let sh = screen.height;
 
-let popupWidth = 50;
-let popupHeight = 50;
-
-let win;
-
-
-
+let popupWidth = 70;
+let popupHeight = 70;
 
 
 function createSuperClock(){
-  let today = new Date();
-  let theTime =today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  let url = theTime;
+  // let today = new Date();
+  // let theTime =today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  // let url = theTime;
+  let url = "hello/index.html";
   var numbers = [0,30,60,90,120,150,180,210,240,270,300,330];
 
   for (let i=0; i<numbers.length; i++){
@@ -30,15 +27,41 @@ function createSuperClock(){
     let y = centerY + Math.sin(angle) * radius;
     let specifications = "width="+popupWidth+", height="+popupHeight+", left="+x+", top="+y;
     let win = window.open(url, "", specifications);
-    let ranTime = 8000 + Math.random()*4000;
+    let ranTime = 8000 + Math.random()*8000;
 
     setTimeout(()=>{
       win.close();
     }, ranTime);
   }
+
+
+
+
 }
 
 
+// function randomPosition(){
+//   let ranY = Math.random()*sh - 70;
+//   let ranX = Math.random()*sw - 70;
+//
+//   win.addEventListener("load", ()=>{
+//
+//     let interval = setInterval(()=>{
+//       x+=40;
+//       if(ranX > sw-70){
+//         clearInterval(interval);
+//         win.close();
+//       }else if(ranY> sh-70){
+//         clearInterval(interval);
+//         win.close();
+//       }else{
+//         win.moveTo(ranX, ranY);
+//       }
+//     }, 50)
+//
+//   })
+// }
 
 
-button.addEventListener("click", createSuperClock);
+button.addEventListener("click", createSuperClock)
+// button2.addEventListener("click", randomPosition)
