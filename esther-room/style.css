@@ -7,6 +7,12 @@
   font-size: 50px;
 }
 
+audio{
+  position: absolute;
+  bottom:100px;
+  left: 100vh;
+}
+
 
 .small-projects a{
   font-size: 30px;

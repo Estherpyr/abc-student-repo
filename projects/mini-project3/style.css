@@ -1,0 +1,103 @@
+#src{
+  position: absolute;
+  left:35vh;
+  top:40vh;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#src-1{
+  position: absolute;
+  left:70vh;
+  top:30vh;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  animation-name: spin;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100px;
+  height: 100px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: gray;
+  opacity:0.8;
+  text-align: center;
+  background: none;
+}
+
+#src-2{
+  position: absolute;
+  left:50vh;
+  top:30vh;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  animation-name: spin;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 140px;
+  height: 140px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: gray;
+  opacity: 0.6;
+  text-align: center;
+  background: none;
+
+}
+
+#src-3{
+  position: absolute;
+  left:80vh;
+  top:10vh;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  animation-name: spin;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 300px;
+  height: 300px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: gray;
+  opacity: 0.2;
+  text-align: center;
+  background: none;
+
+}
+
+#src-4{
+  position: absolute;
+  left:100vh;
+  top:50vh;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  animation-name: spin;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 200px;
+  height: 200px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: gray;
+  opacity: 0.1;
+  text-align: center;
+  background: none;
+
+}
+
+
+
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+
+}
