@@ -1,10 +1,42 @@
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 375px;
-	border: 10px #333 solid;
+button{
+  padding:30px;
+  background-color: black;
+  color: white;
 }
-#videoElement {
-	width: 500px;
-	height: 375px;
-	background-color: #666;
+
+#drums{
+  position:relative;
+  left:350px;
+  top:300px;
+}
+
+
+#guitar{
+  position:relative;
+  left:450px;
+  top:300px;
+}
+
+#vocal{
+  position:relative;
+  left:550px;
+  top:300px;
+}
+
+#bass{
+  position:relative;
+  left:650px;
+  top:300px;
+}
+
+body {
+    -webkit-animation: changeBackground 3s infinite;
+    animation: changeBackground 3s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes changeBackground {
+  from{background-color: blue;}
+  to{background-color: salmon;}
+}
