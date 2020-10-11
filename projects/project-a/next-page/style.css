@@ -4,19 +4,12 @@ body{
 }
 
 
-/* .previous-button{
-  position: fixed;
-  z-index: 999;
-  bottom: 3px;
-  right: 10px;
-} */
-
 
 #previous-page{
   position: fixed;
   z-index: 999;
   bottom: 3px;
-  right: 10p
+  right: 10px;
   width:100px;
   height:40px;
   cursor:pointer;
