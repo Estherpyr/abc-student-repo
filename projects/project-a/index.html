@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <button id="drums" type ="button">DRUM</button>
-    <button id="guitar"type ="button">GUITAR</button>
-    <button id="vocal" type ="button">VOCAL</button>
-    <button id="bass" type ="button">BASS</button>
 
-    <audio id="drumBeat" src="drum.wav"></audio>
-    <audio id="guitarSound" src="guitar.wav"></audio>
-    <audio id="yoSound" src="yo.wav"></audio>
-    <audio id="bassBeat" src="bass.wav"></audio>
+<head>
+  <meta charset="utf-8">
+  <title>DJ DJ DJ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 
 
+  <div class="button-container">
+    <div class="drum-container">
+      <button id="drums" type="button">DRUM</button>
+    </div>
+    <div class="guitar-container">
+      <button id="guitar" type="button">GUITAR</button>
+    </div>
+    <div class="vocal-container">
+      <button id="vocal" type="button">VOCAL</button>
+    </div>
+    <div class="bass-container">
+      <button id="bass" type="button">BASS</button>
+    </div>
+  </div>
+
+  <div class"control-container">
+    <div class="volumeControl">
+      <button id = "allVolume" type = "button">VOLUME CONTROL</button>
+    </div>
+  </div>
+
+  <div class = "next-button">
+    <button id = "next-page" type = "button" onclick="">TRY NEXT ONE?</button>
+  </div>
 
 
+  <audio id="drumBeat" src="drums.wav"></audio>
+  <audio id="guitarSound" src="guitar.wav"></audio>
+  <audio id="yoSound" src="yo.wav"></audio>
+  <audio id="bassBeat" src="bass.wav"></audio>
 
-    <script type ="text/javascript" src="script.js"></script>
-  </body>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>

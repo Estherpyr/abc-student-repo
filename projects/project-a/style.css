@@ -1,42 +1,73 @@
+.button-container {
+  display:flex;
+  justify-content: center;
+}
+
 button{
-  padding:30px;
+  width:80px;
+  height:80px;
+  border-radius: 10px;
+  margin-left: 20px;
   background-color: black;
-  color: white;
+  color:white;
+  cursor:pointer;
 }
 
-#drums{
-  position:relative;
-  left:350px;
-  top:300px;
-}
+.button: hover{background-color: #3e8e41}
 
-
-#guitar{
-  position:relative;
-  left:450px;
-  top:300px;
-}
-
-#vocal{
-  position:relative;
-  left:550px;
-  top:300px;
-}
-
-#bass{
-  position:relative;
-  left:650px;
-  top:300px;
+.button: active{
+  background-color: #3e8e41;
+  box-shadow: 5px #666;
+  transform:translateY(4px);
 }
 
 body {
-    -webkit-animation: changeBackground 3s infinite;
-    animation: changeBackground 3s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+  -webkit-animation: changeBackground 3s infinite;
+  animation: changeBackground 3s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
+.control-container{
+  display:flex;
+  justify-content: center;
+}
+
+#allVolume{
+  width:120px;
+  height:80px;
+  border-radius: 10px;
+  margin-left: 20px;
+  background-color: black;
+  color:white;
+  cursor:pointer;
+}
+
+.next-button{
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+
+
+#next-page{
+  width:100px;
+  height:40px;
+  cursor:pointer;
+}
+
+
 @keyframes changeBackground {
-  from{background-color: blue;}
-  to{background-color: salmon;}
+  from {
+    background-color: blue;
+  }
+
+  to {
+    background-color: salmon;
+  }
 }
