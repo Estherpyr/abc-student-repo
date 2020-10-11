@@ -50,7 +50,7 @@ body {
 
 .next-button{
   position: fixed;
-  bottom: -4px;
+  bottom: 3px;
   right: 10px;
 }
 

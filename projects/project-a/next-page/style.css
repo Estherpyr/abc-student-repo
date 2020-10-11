@@ -2,3 +2,22 @@
 body{
   background-image: url("cat-memes.jpg");
 }
+
+
+/* .previous-button{
+  position: fixed;
+  z-index: 999;
+  bottom: 3px;
+  right: 10px;
+} */
+
+
+#previous-page{
+  position: fixed;
+  z-index: 999;
+  bottom: 3px;
+  right: 10p
+  width:100px;
+  height:40px;
+  cursor:pointer;
+}
