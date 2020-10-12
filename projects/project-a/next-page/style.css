@@ -3,7 +3,6 @@ body{
   background-image: url("cat-memes.jpg");
 }
 
-
 #previous-page{
   position: fixed;
   z-index: 999;
@@ -13,7 +12,6 @@ body{
   height:40px;
   cursor:pointer;
 }
-
 #next-page{
   position: fixed;
   z-index: 999;
