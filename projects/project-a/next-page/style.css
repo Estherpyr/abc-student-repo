@@ -4,8 +4,17 @@ body{
 }
 
 
-
 #previous-page{
+  position: fixed;
+  z-index: 999;
+  bottom: 3px;
+  left: 10px;
+  width:100px;
+  height:40px;
+  cursor:pointer;
+}
+
+#next-page{
   position: fixed;
   z-index: 999;
   bottom: 3px;
