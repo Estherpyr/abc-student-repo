@@ -5,12 +5,11 @@ let drumValueField= document.getElementById("myDrumValue");
 function drumHappened(){
   console.log("what's input?");
   drumValueField.innerHTML = drumRange.value;
-  // valueField.style.marginLeft = range.value + "px";
 }
 
 drumRange.addEventListener("input", drumHappened)
 
-// hold the command and change all "change" into "input"
+
 
 
 let guitarRange= document.getElementById("myGuitarRange");
@@ -32,7 +31,7 @@ let bassValueField= document.getElementById("myBassValue");
 
 function bassHappened(){
   console.log("what's input?");
-  bassValueField.innerHTML = drumRange.value;
+  bassValueField.innerHTML = bassRange.value;
   // valueField.style.marginLeft = range.value + "px";
 }
 
@@ -44,8 +43,8 @@ let vocalValueField= document.getElementById("myVocalValue");
 
 function vocalHappened(){
   console.log("what's input?");
-  bassValueField.innerHTML = drumRange.value;
+  vocalValueField.innerHTML = vocalRange.value;
   // valueField.style.marginLeft = range.value + "px";
 }
 
-bassRange.addEventListener("input", vocalHappened);
+vocalRange.addEventListener("input", vocalHappened);

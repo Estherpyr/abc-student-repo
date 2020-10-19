@@ -80,7 +80,7 @@ playVocal.addEventListener("click", function() {
   if (!playing) {
     startVocal();
     // startVocalImage();
-    playVocal.innerHTML = "STOP";
+    playVocal.innerHTML = "VOCAL";
   } else {
     stopVocal();
     playVocal.innerHTML = "VOCAL"
@@ -105,8 +105,8 @@ playBass.addEventListener("click", function() {
 let sw = screen.width;
 let sh = screen.height;
 
-let popupWidth = 200;
-let popupHeight = 200;
+let popupWidth = 300;
+let popupHeight = 300;
 
 let volumeControl = document.getElementById("allVolume"); //button that control the volumes
 

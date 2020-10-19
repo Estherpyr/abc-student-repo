@@ -1,0 +1,16 @@
+{
+  "name": "replacer",
+  "version": "1.0",
+  "description": "replace words",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  "browser_action": {
+
+  }
+}
