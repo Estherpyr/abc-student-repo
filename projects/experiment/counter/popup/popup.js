@@ -1,22 +1,28 @@
-let counterButton = document.getElementById("button");
+
+let button = document.getElementById("increaseButton");
 let valueDisplay = document.getElementById("currentValue");
 
 let currentValue = 0;
 
 
-//send the message to the background script, send the message, and the
-//function(response) is what returned
-
-chrome.runtime.sendMessage({type: "getCurrentValue"}, function(response) {
+// get current value from background script
+chrome.runtime.sendMessage( {type: "getCurrentValue"}, function(response){
+  // receive the value inside this callback function
+  console.log("response is", response)
+  // update the value of currentValue with the one we receive from background script
   currentValue = response.value;
-  valueDisplay.innerHTML =currentValue;
+  // update the value displayed on the page
+  valueDisplay.innerHTML = currentValue;
 });
 
-button.addEventListerner("click",=>{
+
+
+button.addEventListener("click", ()=>{
+  // increase value
   currentValue+=1;
+  // update dislayed value
   valueDisplay.innerHTML = currentValue;
+  //tell background script we increased by one
+  chrome.runtime.sendMessage( {type: "increaseValue"} );
 
-  chrome.runtime.sendMessage({type: "incresedValue"}), function(response){
-
-  };
-}
+})

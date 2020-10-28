@@ -1,22 +1,16 @@
 {
-  "name": "counter",
-  "version": "1.0",
-  "description": "replace words",
-  "manifest_version": 2,
-  "permissions": [
-    "activeTab"
-  ],
-  "content_scripts": [{
-    "matches": ["<all_urls>"]
-  }],
-  "browser_action": {
-    "default_popup":"popup/popup.html"
-  },
-  "permissions":[
-    "storage"
-  ],
-  "background": {
-   "scripts": ["backgroundscript.js"],
-   "persistent": false
- }
+    "name": "Counter",
+    "version": "1.0",
+    "description": "counts values",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+      "storage"
+    ],
+    "background": {
+      "scripts": ["backgroundscript.js"],
+      "persistent": false
+    }
 }
