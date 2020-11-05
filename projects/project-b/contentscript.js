@@ -1,16 +1,16 @@
 //1. reverse texts every 10 seconds
-let myVar
-function reverseText() {
-    myVar=setInterval(function() {
-    let text= Array.from(document.querySelectorAll('p'));
-
-    for (var i = 0; i < text.length; i++) {
-      let k= i;
-      text[k].innerHTML=text[k].textContent.split(' ').reverse().join(' ');
-    }
-  },10000)
-}
-window.onload=reverseText();
+// let myVar
+// function reverseText() {
+//     myVar=setInterval(function() {
+//     let text= Array.from(document.querySelectorAll('p'));
+//
+//     for (var i = 0; i < text.length; i++) {
+//       let k= i;
+//       text[k].innerHTML=text[k].textContent.split(' ').reverse().join(' ');
+//     }
+//   },10000)
+// }
+// window.onload=reverseText();
 
 //2. mouse tracing
 document.body.addEventListener('mousemove',()=>{
