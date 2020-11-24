@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/socket.io/socket.io.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="videowrapper">
+      <!-- <h3>Let's Watch News!!</h3> -->
+      <!-- this is the live video -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/g3qkBeMyfKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <!--  -->
+      <div class="chatbox">
+        <p id="chat">
+          <marquee direction="left" loop='1'>Esther: this is the example</marquee>
+        </p>
+      </div>
+
+      <div class="messagebox">
+        <input autocomplete="off" type="text" id="message" value="" placeholder="you could say something..." style="width:480px; height:20px">
+        <button id="send">Send</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"> </script>
+</body>
+
+</html>
