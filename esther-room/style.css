@@ -1,58 +1,82 @@
-#top{
-  position:relative;
-  left:550px;
-  top:50px;
-  color:#95baf5;
+.body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.small-projects {
+  /* border: 3px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; */
+  padding: 10px;
+}
+
+.big-projects {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 5px 5px black;
+  position: relative;
+  z-index: 0;
+}
+
+#top {
+  color: #95baf5;
   font-family: 'Baloo Tammudu 2', cursive;
-  font-size: 50px;
+  font-size: 20px;
+  text-align: left;
 }
 
-audio{
-  position: absolute;
-  bottom:100px;
-  left: 100vh;
+#message {
+  color: #95baf5;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 20px;
+  text-align: left;
 }
 
 
-.small-projects a{
+
+.small-projects a {
   font-size: 30px;
   font-family: 'Baloo Tammudu 2', cursive;
-  color:#8fa0ba;
+  color: #8fa0ba;
   position: relative;
-  top:100px;
-  left:34px;
-  padding: 30px 200px;
+  padding: 10px;
 }
 
-.big-projects a{
+.big-projects a {
   font-size: 35px;
   font-family: 'Baloo Tammudu 2', cursive;
-  color:#8fa0ba;
-  position:relative;
-  top:50px;
-  left:100px;
-  padding:60px 50px;
+  color: #8fa0ba;
+  position: relative;
+  padding: 10px;
 }
 
-img{
-  align-items: baseline;
-  width:30px;
-  height: 30px;
-}
-
-#sun{
+#sun {
   position: absolute;
-  top:80px;
-  left:80px;
-  width:200px;
-  height:200px;
+  top: 30px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
   animation: rotation 2s infinite linear;
+}
+
+.song{
+  padding:30px;
 }
 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
