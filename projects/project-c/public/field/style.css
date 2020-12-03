@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 204, 0);
+}
+/* .wrapper {
+  display:flex;
+  justify-content: center;
+} */
+#ball {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+#score{
+  border:1px solid black;
+  padding:10px;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+}
+
+#scoreContainer{
+  display:flex;
+  justify-content: center;
+}
+
+#canvasContainer{
+  display:flex;
+  justify-content: center;
+  width:1000px;
+  height: 900px;
+}
+#red {
+ color: red;
+}
+
+#blue {
+ color: blue;
+}
+.playerBox {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  display: block;
+}
