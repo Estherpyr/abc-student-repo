@@ -3,7 +3,11 @@ body{
   background-image: url("cat-memes.jpg");
 }
 
-
+p{
+  color: black;
+  font-size: 30px;
+  z-index: 999;
+}
 
 #previous-page{
   position: fixed;

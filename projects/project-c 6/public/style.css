@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  background-color: rgb(250, 163, 9);
+  overflow: hidden;
+  font-family: 'Goldman', cursive;
+}
+/* overall wrapper */
+.masterWrapper{
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+/* intro  */
+.intro {
+  width: 40vw;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border: 30px solid white;
+}
+/* landing page */
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+/* landing page form(nameInput) */
+#nameBox{
+  font-size: 30px;
+  font-family: 'Goldman', cursive;
+}
+#button{
+  font-size: 30px;
+  outline: none;
+  background-color: white;
+  font-family: 'Goldman', cursive;
+}
+.option {
+  margin: 5px;
+  padding: 5px;
+}
+.option:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+/* game page */
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+/* the field container */
+#canvasContainer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:1000px;
+  height: 800px;
+}
+/* score board styling */
+#scoreContainer{
+  display:flex;
+  justify-content: center;
+  width:100vw;
+}
+#score{
+  border:1px solid black;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  background-color: black;
+  border: 5px solid white;
+  font-size: 40px;
+  box-shadow: 0 0 6px 4px;
+}
+#red {
+ color: red;
+}
+#blue {
+ color: blue;
+}
+/* display of role assignment */
+#text {
+  width: 100vw;
+  text-align: center;
+  font-size: 30px;
+}
+/* side boxes styling*/
+.roleBox, .chatBox {
+  border:1px solid black;
+  width: 300px;
+  margin-bottom: 0;
+  position: relative;
+  text-align: left;
+  background-color: black;
+  border: 5px solid white;
+  font-size: 30px;
+  box-shadow: 0 0 6px 4px;
+  margin: 40px;
+  width: 400px;
+}
+.title{
+  background-color: white;
+  color: black;
+}
+/* team member list */
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+}
+/* chatting room messgeBox styling*/
+#selectMember {
+  font-size: 30px;
+  font-family: 'Goldman', cursive;
+}
+#chatMessage{
+  height: 400px;
+  color: white;
+}
+#messageText{
+  background-color: white;
+  color: black;
+}
+#message{
+  width: 95%;
+  margin: 5px;
+  height: 50px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-family: 'Goldman', cursive;
+  overflow: scroll;
+}
+#send{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-family: 'Goldman', cursive;
+  margin: 0;
+}

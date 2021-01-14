@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="masterWrapper">
+      <div id="landing">
+        <div class="intro">
+          <p>Let's play soccer together!</p>
+          <p id="text1"></p>
+          <p id="text2"></p>
+          <div class="option" id="join">JOIN!</div>
+          <div class="option" id="watch">WATCH!</div>
+          <!-- <p id="name" style="display:none">You are <input type="text" placeholder="...?"autocomplete="false" name="hidden" id="nameBox" maxlength="10"> <button id="button">OK!</button></p> -->
+        </div>
+        </div>
+        <div id="game">
+          <div id="scoreContainer">
+            <h1 id="score">
+              <span id="red">0</span>
+              <span id="blue">0</span>
+          </div>
+          <p id="text">You are playing: <span id="role"></span></p>
+          <div class="roleBox">
+            <div class="title">
+              Players
+            </div>
+            <ul>
+              <li class="red" id="member1">RED 0</li>
+              <li class="red" id="member1">RED 1</li>
+              <li class="red" id="member1">RED 2</li>
+              <li class="red" id="member1">RED 3</li>
+              <li class="blue" id="member1">BLUE 4</li>
+              <li class="blue" id="member1">BLUE 5</li>
+              <li class="blue" id="member1">BLUE 6</li>
+              <li class="blue" id="member1">BLUE 7</li>
+            </ul>
+          </div>
+          <div id="canvasContainer">
+          </div>
+            <div class="chatBox">
+              <div class="title">
+                Chat Room
+              </div>
+              <ul id="chatMessage">
+              </ul>
+              <div id="messageText">@ <select id="selectMember">
+                <option>ALL </option>
+                <option>RED 1</option>
+                <option>RED 2</option>
+                <option>RED 3</option>
+              </select>
+              <input type="text" id="message" placeholder="...?"autocomplete="false" name="hidden"></p>
+              <button type="button" id="send" >Send!</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
